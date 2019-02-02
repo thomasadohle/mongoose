@@ -1,0 +1,224 @@
+[
+  {
+    "id": 123,
+    "title": "WebDev",
+    "modules": [
+      {
+        "id": 1,
+        "title": "jQuery",
+        "lessons": [
+          {
+            "id": 1,
+            "title": "Lesson 1",
+            "topics": [
+              {
+                "id": 1,
+                "title": "jQuery Topic 1"
+              },
+              {
+                "id": 2,
+                "title": "jQuery Topic 2"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Lesson 2",
+            "topics": [
+              {
+                "id": 5,
+                "title": "jQuery Topic 1"
+              },
+              {
+                "id": 6,
+                "title": "jQuery Topic 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "React",
+        "lessons": [
+          {
+            "id": 3,
+            "title": "Lesson 3",
+            "topics": [
+              {
+                "id": 3,
+                "title": "React Topic 1"
+              },
+              {
+                "id": 4,
+                "title": "React Topic 2"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Lesson 4",
+            "topics": [
+              {
+                "id": 7,
+                "title": "React Topic 1"
+              },
+              {
+                "id": 8,
+                "title": "React Topic 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "title": "Databases",
+    "modules": [
+      {
+        "id": 3,
+        "title": "SQL",
+        "lessons": [
+          {
+            "id": 1,
+            "title": "Lesson 1 DB",
+            "topics": [
+              {
+                "id": 1,
+                "title": "SQL Topic 1"
+              },
+              {
+                "id": 2,
+                "title": "SQL Topic 2"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Lesson 2 DB",
+            "topics": [
+              {
+                "id": 5,
+                "title": "SQL Topic 1"
+              },
+              {
+                "id": 6,
+                "title": "SQL Topic 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "JPA",
+        "lessons": [
+          {
+            "id": 1,
+            "title": "Lesson 1 JPA",
+            "topics": [
+              {
+                "id": 1,
+                "title": "JPA Topic 1"
+              },
+              {
+                "id": 2,
+                "title": "JPA Topic 2"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Lesson 2 JPA",
+            "topics": [
+              {
+                "id": 5,
+                "title": "JPA Topic 1"
+              },
+              {
+                "id": 6,
+                "title": "JPA Topic 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 345,
+    "title": "Software Engineering",
+    "modules": [
+      {
+        "id": 5,
+        "title": "Agile",
+        "lessons": [
+          {
+            "id": 1,
+            "title": "Lesson 1 Agile",
+            "topics": [
+              {
+                "id": 1,
+                "title": "Agile Topic 1"
+              },
+              {
+                "id": 2,
+                "title": "Agile Topic 2"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Lesson 2 Agile",
+            "topics": [
+              {
+                "id": 5,
+                "title": "Agile Topic 1"
+              },
+              {
+                "id": 6,
+                "title": "Agile Topic 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Testing",
+        "lessons": [
+          {
+            "id": 1,
+            "title": "Lesson 1 Test",
+            "topics": [
+              {
+                "id": 1,
+                "title": "Test Topic 1"
+              },
+              {
+                "id": 2,
+                "title": "Test Topic 2"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Lesson 2 Test",
+            "topics": [
+              {
+                "id": 5,
+                "title": "Test Topic 1"
+              },
+              {
+                "id": 6,
+                "title": "Test Topic 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
