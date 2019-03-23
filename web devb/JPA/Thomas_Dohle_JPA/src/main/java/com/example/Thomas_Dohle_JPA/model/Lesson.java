@@ -14,7 +14,7 @@ public class Lesson {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int lessonId;
 	
-	@OneToMany(mappedBy="lesson")
+	@OneToMany(mappedBy="lesson", orphanRemoval=true)
 	private List<Topic> topics = new ArrayList<>();
 	
 	private String title;

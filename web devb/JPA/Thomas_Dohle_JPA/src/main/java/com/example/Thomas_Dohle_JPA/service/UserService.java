@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 import com.example.Thomas_Dohle_JPA.model.User;
 import com.example.Thomas_Dohle_JPA.repositories.UserRepository;
 
-@CrossOrigin
+@CrossOrigin(allowCredentials="true")
 @RestController
 public class UserService {
 	
@@ -29,6 +29,7 @@ public class UserService {
 	 * @param session
 	 * @return
 	 */
+
 	@PostMapping("/api/register")
 	public User register (@RequestBody User user,
 			HttpSession session) {

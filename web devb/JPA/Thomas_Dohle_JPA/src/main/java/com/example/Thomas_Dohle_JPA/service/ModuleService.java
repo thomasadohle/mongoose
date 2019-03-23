@@ -20,7 +20,7 @@ import com.example.Thomas_Dohle_JPA.model.*;
 import com.example.Thomas_Dohle_JPA.repositories.CourseRepository;
 import com.example.Thomas_Dohle_JPA.repositories.ModuleRepository;
 
-@CrossOrigin
+@CrossOrigin(allowCredentials="true")
 @RestController
 public class ModuleService {
 	@Autowired

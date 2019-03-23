@@ -19,9 +19,10 @@ import javax.servlet.http.HttpSession;
 import com.example.Thomas_Dohle_JPA.model.*;
 import com.example.Thomas_Dohle_JPA.repositories.LessonRepository;
 import com.example.Thomas_Dohle_JPA.repositories.ModuleRepository;
+import com.example.Thomas_Dohle_JPA.repositories.TopicRepository;
 
 
-@CrossOrigin
+@CrossOrigin(allowCredentials="true")
 @RestController
 public class LessonService {
 
@@ -30,6 +31,9 @@ public class LessonService {
 	
 	@Autowired
 	LessonRepository lessonRepository;
+	
+	@Autowired
+	TopicRepository topicRepository;
 	
 	
 	@PostMapping("/api/modules/{mid}/lesson")

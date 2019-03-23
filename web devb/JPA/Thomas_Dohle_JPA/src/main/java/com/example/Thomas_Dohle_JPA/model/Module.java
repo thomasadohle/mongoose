@@ -12,7 +12,7 @@ public class Module {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int moduleId;
 	
-	@OneToMany(mappedBy="module")
+	@OneToMany(mappedBy="module", orphanRemoval=true)
 	private List<Lesson> lessons = new ArrayList<>();
 	
 	private String moduleTitle;

@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Random;
 import javax.servlet.http.HttpSession;
 
-@CrossOrigin
+@CrossOrigin(allowCredentials="true")
 @RestController
 public class TopicService {
 
