@@ -32,8 +32,12 @@ public class Module {
 		this.moduleTitle = moduleTitle;
 	}
 	
+	public Module updateModule(Module newModule) {
+		this.moduleTitle = newModule.moduleTitle;
+		return this;
+	}
+	
 	public List<Lesson> getLessons() {return this.lessons;}
-
 	public Integer getID() {return this.moduleId;}
 	public String getModuleTitle() {return this.moduleTitle;}
 	public Course getCourse() {return this.course;}
@@ -41,6 +45,7 @@ public class Module {
 	public void setId(Integer id) {this.moduleId = id;}
 	public void setCourse(Course course) {this.course = course;}
 	public void setModuleTitle(String title) {this.moduleTitle=title;}
+	public void addLesson(Lesson l) {this.lessons.add(l);}
 	
 	@Override
 	public String toString() {

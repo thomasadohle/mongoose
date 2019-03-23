@@ -25,6 +25,11 @@ public class Topic {
 	
 	public Topic() {}
 	
+	public Topic updateTopic (Topic topic) {
+		this.title = topic.title;
+		return this;
+	}
+	
 	public Integer getId() {return this.id;}
 	public Lesson getLesson() {return this.lesson;}
 	public String getTitle() {return this.title;}

@@ -35,6 +35,11 @@ public class Course {
 		this.courseTitle = courseTitle;
 	}
 	
+	public Course updateCourse(Course newCourse) {
+		this.courseTitle = newCourse.getCourseTitle();
+		return this;
+	}
+	
 	public List<Module> getModules() {return this.modules;}
 	public User getAuthor() {return this.author;}
 	public Integer getID() {return this.courseId;}

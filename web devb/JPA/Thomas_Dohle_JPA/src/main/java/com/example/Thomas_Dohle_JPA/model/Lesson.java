@@ -28,6 +28,11 @@ public class Lesson {
 	public Lesson (String title) {
 		this.title=title;}
 	
+	public Lesson updateLesson (Lesson lesson) {
+		this.title = lesson.title;
+		return this;
+	}
+	
 	public List<Topic> getTopics(){return this.topics;}
 	public Integer getId() {return this.lessonId;}
 	public String getTitle() {return this.title;}
