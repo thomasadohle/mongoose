@@ -19,7 +19,7 @@ public class Topic {
 	@JsonIgnore
 	private Lesson lesson;	
 	
-	@OneToMany(mappedBy="topic")
+	@OneToMany(mappedBy="topic",orphanRemoval=true)
 	private List<Widget> widgets = new ArrayList<>();
 	private String title;
 	
@@ -37,7 +37,7 @@ public class Topic {
 	public void setId(Integer id) {this.id = id;}
 	public void setLesson(Lesson lesson) { this.lesson=lesson;}
 	public void setTitle(String title) {this.title=title;}
-	
+	public void addWidget(Widget widget) {this.widgets.add(widget);}	
 	@Override
 	public String toString() {
 		return "topic: " + this.id + " " + this.title + "belongs to: " + this.lesson.toString();

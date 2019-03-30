@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.Thomas_Dohle_JPA.model.*;
 import com.example.Thomas_Dohle_JPA.repositories.LessonRepository;
 import com.example.Thomas_Dohle_JPA.repositories.TopicRepository;
+import com.example.Thomas_Dohle_JPA.repositories.WidgetRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +31,9 @@ public class TopicService {
 	
 	@Autowired
 	TopicRepository topicRepository;
+	
+	@Autowired
+	WidgetRepository widgetRepository;
 
 	@PostMapping("/api/lessons/{lid}/topic")
 	public Topic createTopic(@RequestBody Topic topic,
@@ -64,5 +68,21 @@ public class TopicService {
 	@DeleteMapping("/api/topics/{tid}")
 	public void deleteTopic(@PathVariable(value="tid") int topicId) {
 		topicRepository.deleteById(topicId);
+	}
+	
+	@PostMapping("/api/topic/{tid}/widget")
+	public Widget createWidget(@RequestBody Widget widget, @PathVariable (value="tid") int topicId) {
+		Topic topic = topicRepository.findById(topicId).get();
+		topic.addWidget(widget);
+		widget.setTopic(topic);
+		topicRepository.save(topic);
+		widgetRepository.save(widget);
+		return widget;
+	}
+	
+	@GetMapping("/api/topic/{tid}/widget")
+	public List<Widget> findAllWidgets(@PathVariable (value="tid")int topicId){
+		List<Widget> widgets = widgetRepository.findWidgetsByTopic(topicId);
+		return widgets;
 	}
 }

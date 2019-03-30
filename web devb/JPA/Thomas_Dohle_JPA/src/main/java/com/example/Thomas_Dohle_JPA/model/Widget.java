@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import javax.persistence.*;
 
 @Entity
 public class Widget {
@@ -27,9 +28,11 @@ public class Widget {
 	public String getType() {return this.wType;}
 	public int getWidth() {return this.width;}
 	public int getHeight() {return this.height;}
+	public Topic getTopic() {return this.topic;}
 	
-	public void setType(String type) {this.wType=type;}
+	public void setType(String type) {this.wType=type.toUpperCase();}
 	public void setWidth(int width) {this.width=width;}
 	public void setHeight(int height) {this.height=height;}
+	public void setTopic(Topic topic) {this.topic=topic;}
 	
 }

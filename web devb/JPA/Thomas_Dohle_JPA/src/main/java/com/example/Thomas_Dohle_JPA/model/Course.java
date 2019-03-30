@@ -15,7 +15,7 @@ public class Course {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int courseId;
 	
-	@OneToMany(mappedBy="course")
+	@OneToMany(mappedBy="course", orphanRemoval=true)
 	private List<Module> modules = new ArrayList<>();
 	
 	@ManyToOne()

@@ -1,5 +1,9 @@
 package com.example.Thomas_Dohle_JPA.service;
 
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -8,17 +12,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import javax.servlet.http.HttpSession;
-import com.example.Thomas_Dohle_JPA.model.*;
+import com.example.Thomas_Dohle_JPA.model.Course;
+import com.example.Thomas_Dohle_JPA.model.Module;
 import com.example.Thomas_Dohle_JPA.repositories.CourseRepository;
 import com.example.Thomas_Dohle_JPA.repositories.ModuleRepository;
+
 
 @CrossOrigin(allowCredentials="true")
 @RestController
