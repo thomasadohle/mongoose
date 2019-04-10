@@ -33,6 +33,7 @@ public class Topic {
 	public Integer getId() {return this.id;}
 	public Lesson getLesson() {return this.lesson;}
 	public String getTitle() {return this.title;}
+	public List<Widget> getWidgets(){return this.widgets;}
 	
 	public void setId(Integer id) {this.id = id;}
 	public void setLesson(Lesson lesson) { this.lesson=lesson;}

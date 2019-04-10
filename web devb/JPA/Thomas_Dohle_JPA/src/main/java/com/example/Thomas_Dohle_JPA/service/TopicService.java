@@ -70,19 +70,15 @@ public class TopicService {
 		topicRepository.deleteById(topicId);
 	}
 	
-	@PostMapping("/api/topic/{tid}/widget")
-	public Widget createWidget(@RequestBody Widget widget, @PathVariable (value="tid") int topicId) {
-		Topic topic = topicRepository.findById(topicId).get();
-		topic.addWidget(widget);
-		widget.setTopic(topic);
-		topicRepository.save(topic);
-		widgetRepository.save(widget);
-		return widget;
-	}
+//	@PostMapping("/api/topic/{tid}/widget")
+//	public Widget createWidget(@RequestBody Widget widget, @PathVariable (value="tid") int topicId) {
+//		Topic topic = topicRepository.findById(topicId).get();
+//		topic.addWidget(widget);
+//		widget.setTopic(topic);
+//		topicRepository.save(topic);
+//		widgetRepository.save(widget);
+//		return widget;
+//	}
 	
-	@GetMapping("/api/topic/{tid}/widget")
-	public List<Widget> findAllWidgets(@PathVariable (value="tid")int topicId){
-		List<Widget> widgets = widgetRepository.findWidgetsByTopic(topicId);
-		return widgets;
-	}
+
 }
