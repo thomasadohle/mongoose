@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-modules.exports = mongoose.Schema({
-    _id: Number,
+const trueFalseSchema = mongoose.Schema({
     isTrue: Boolean
-}, {collection: 'questions'})
+}, {collection: 'true_false'});
+module.exports= trueFalseSchema;

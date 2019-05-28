@@ -1,3 +1,3 @@
-const mongoose = requre('mongoose')
-const questionSchema = requre('./question.schema.server')
+const mongoose = require('mongoose')
+const questionSchema = require('./question.schema.server')
 module.exports = mongoose.model('QuestionModel', questionSchema)
