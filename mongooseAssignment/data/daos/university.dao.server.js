@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
+const answerDao = require('../../models/answer/answer.dao.server')
 
 truncateDatabase = () =>
-    //remove all data
+    console.log('truncate')
+    // answerDao.emptyCollection().then(res => {
+    //     answerDao.findAllAnswers().then(res => console.log("answers: " + res))
+    // })
 
 populateDatabase = () =>
-    //populate with test data
+    console.log('populate')
 
 createStudent = (student) =>
     //insert student

@@ -22,4 +22,7 @@ updateStudent = (id, student) =>
 deleteStudent = id =>
     studentModel.deleteOne({_id: id})
 
-module.exports = {findAllStudents, findStudentById, createStudent, updateStudent, deleteStudent};
+emptyCollection = () =>
+    studentModel.deleteMany({}, resp => console.log(resp))
+
+module.exports = {findAllStudents, findStudentById, createStudent, updateStudent, deleteStudent, emptyCollection};

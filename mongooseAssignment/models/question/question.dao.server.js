@@ -21,4 +21,7 @@ updateQuestion = (id, question) =>
 deleteQuestion = id =>
     questionModel.deleteOne({_id: id})
 
-module.exports = {findAllQuestions, findQuestionById, createQuestion, updateQuestion, deleteQuestion}
+emptyCollection = () =>
+    questionModel.deleteMany({}, resp => console.log(resp))
+
+module.exports = {findAllQuestions, findQuestionById, createQuestion, updateQuestion, deleteQuestion, emptyCollection}
